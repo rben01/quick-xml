@@ -159,7 +159,7 @@ impl<'a> BytesStart<'a> {
     ///
     /// The yielded items must be convertible to [`Attribute`] using `Into`.
     ///
-    /// [`Attribute`]: attributes/struct.Attributes.html
+    /// [`Attribute`]: attributes/struct.Attribute.html
     pub fn with_attributes<'b, I>(mut self, attributes: I) -> Self
     where
         I: IntoIterator,
@@ -243,7 +243,7 @@ impl<'a> BytesStart<'a> {
     ///
     /// The yielded items must be convertible to [`Attribute`] using `Into`.
     ///
-    /// [`Attribute`]: attributes/struct.Attributes.html
+    /// [`Attribute`]: attributes/struct.Attribute.html
     pub fn extend_attributes<'b, I>(&mut self, attributes: I) -> &mut BytesStart<'a>
     where
         I: IntoIterator,
